@@ -1,0 +1,13 @@
+[versions]
+    minecraft="1.20.4"
+    java="17"
+    neoGradle="7.0.84"
+
+[libraries]
+    parchment={ module="org.parchmentmc.data:parchment-1.20.3", version="2023.12.31" }
+    neoforge={ module="net.neoforged:neoforge", version="20.4.167" }
+    minecraft={ module="net.minecraft:client", version.ref="minecraft" }
+
+[plugins]
+    neoGradle={ id="net.neoforged.gradle.userdev", version.ref="neoGradle" }
+    vanillaGradle={ id="net.neoforged.gradle.vanilla", version.ref="neoGradle" }

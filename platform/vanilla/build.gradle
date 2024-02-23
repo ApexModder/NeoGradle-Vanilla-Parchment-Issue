@@ -1,0 +1,8 @@
+apply plugin: libs.plugins.vanillaGradle.get().pluginId
+
+base.archivesName = 'ngissue-vanilla'
+subsystems.parchment.parchmentArtifact = "${libs.parchment.get()}:checked@zip"
+
+dependencies {
+    implementation libs.minecraft
+}
